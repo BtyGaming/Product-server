@@ -1,0 +1,16 @@
+package Visionaris.pe.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class ImageDTO {
+    private String name;
+    private String imageUrl;
+    private String imageId;
+
+    public ImageDTO(String originalFilename, String imageUrl, String imageId) {
+    }
+}

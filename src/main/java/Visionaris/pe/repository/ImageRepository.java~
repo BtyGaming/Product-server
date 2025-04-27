@@ -1,0 +1,4 @@
+package Visionaris.pe.repository;
+
+public interface ImageRepository {
+}

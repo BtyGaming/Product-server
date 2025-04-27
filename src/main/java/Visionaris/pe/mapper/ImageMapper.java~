@@ -1,0 +1,11 @@
+package Visionaris.pe.mapper;
+
+import Visionaris.pe.dto.ImageDTO;
+import Visionaris.pe.entity.Image;
+import org.mapstruct.Mapper;
+
+@Mapper(componentModel = "spring")
+public interface ImageMapper {
+    ImageDTO toDto(Image image);
+    Image toEntity(ImageDTO imageDTO);
+}

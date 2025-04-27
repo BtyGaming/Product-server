@@ -1,0 +1,4 @@
+package Visionaris.pe.config;
+
+public class WebConfig {
+}

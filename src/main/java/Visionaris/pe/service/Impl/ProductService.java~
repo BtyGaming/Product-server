@@ -1,0 +1,29 @@
+package Visionaris.pe.service.Impl;
+
+import Visionaris.pe.dto.ProductDTO;
+import Visionaris.pe.entity.Product;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Optional;
+
+public interface ProductServiceImpl {
+
+    ProductDTO create(ProductDTO productDTO, MultipartFile file) throws IOException;
+
+    // Actualizar un producto existente
+    ProductDTO update(ProductDTO productDTO);
+
+    // Obtener todos los productos
+    List<ProductDTO> findAll();
+
+    // Buscar un producto por su ID
+    Optional<ProductDTO> findById(Long id);
+
+    // Eliminar un producto
+    void deleteProduct(ProductDTO productDTO) throws IOException;
+
+    // Actualizar la imagen de un producto
+    ProductDTO updateImage(MultipartFile file, ProductDTO productDTO) throws IOException;
+}
